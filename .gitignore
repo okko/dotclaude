@@ -1,0 +1,8 @@
+# Safety-first: ignore everything by default to avoid publishing
+# confidential data (credentials, transcripts, project history, etc.)
+*
+
+# Whitelist only the files we explicitly want to track
+!.gitignore
+!settings.json
+!statusline-command.sh

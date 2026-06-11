@@ -1,0 +1,19 @@
+{
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "permissions": {
+    "defaultMode": "default"
+  },
+  "model": "opus[1m]",
+  "effortLevel": "medium",
+  "theme": "dark",
+  "editorMode": "normal",
+  "verbose": true,
+  "switchModelsOnFlag": true,
+  "statusLine": {
+    "type": "command",
+    "command": "sh /Users/okko/.claude/statusline-command.sh"
+  }
+}
