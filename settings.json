@@ -4,7 +4,11 @@
     "pr": ""
   },
   "permissions": {
-    "defaultMode": "default"
+    "defaultMode": "default",
+    "ask": [
+      "Bash(git push)",
+      "Bash(git push:*)"
+    ]
   },
   "model": "opus[1m]",
   "effortLevel": "medium",
