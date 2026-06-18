@@ -16,8 +16,9 @@ short_cwd="${cwd/#$home/~}"
 # Build the status line
 parts=""
 
-# User and host
-parts="$(whoami)@$(hostname -s)"
+# Organization (from Claude Code account)
+org=$(jq -r '.oauthAccount.organizationName // empty' "$HOME/.claude.json" 2>/dev/null)
+parts="${org:-$(whoami)@$(hostname -s)}"
 
 # Directory
 [ -n "$short_cwd" ] && parts="$parts $short_cwd"
